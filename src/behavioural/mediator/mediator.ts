@@ -1,7 +1,8 @@
+import type { MediatorProtocol } from "./mediator-protocol";
 import type { Seller } from "./seller";
 import type { SellerProduct } from "./seller-product";
 
-export class Mediator {
+export class Mediator implements MediatorProtocol {
     private sellers: Seller[] = [];
 
     addSeller(...sellers: Seller[]): void {

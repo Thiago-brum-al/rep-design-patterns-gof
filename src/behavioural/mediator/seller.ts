@@ -1,7 +1,8 @@
+import type { AppEntity } from "./app-entity";
 import type { Mediator } from "./mediator";
 import type { SellerProduct } from "./seller-product";
 
-export class Seller {
+export class Seller implements AppEntity {
     private products: SellerProduct[] = [];
     private _mediator: Mediator | null = null;
 

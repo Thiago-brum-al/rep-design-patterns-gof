@@ -1,6 +1,7 @@
+import type { AppEntity } from "./app-entity";
 import type { Mediator } from "./mediator";
 
-export class Customer {
+export class Customer implements AppEntity {
     constructor(
         private mediator: Mediator
     ){};
