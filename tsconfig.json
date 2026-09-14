@@ -9,7 +9,7 @@
     // See also https://aka.ms/tsconfig/module
     "module": "es6",
     "target": "es2016",
-    "types": [],
+    "types": ["node"],
     // For nodejs:
     "lib": ["esnext", "DOM"],
     // "types": ["node"],
